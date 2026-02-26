@@ -18,6 +18,18 @@ int main() {
   cout << "Your ID is " << id << ".\n";
   cout << id << endl;
 
+  int second;
+
+  cout << "Enter a value in seconds: \n";
+  cin >> second;
+
+  int hours = second / 3600;
+  int minutes = (second % 3600) / 60;
+  int seconds = second % 60;
+
+  cout << second << " seconds is equal to " << hours << " : " << minutes
+       << " : " << seconds << "\n";
+
   int x1, y1, x2, y2;
 
   cout << "Enter the coordinates of the first point:\n";
